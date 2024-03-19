@@ -1,0 +1,7 @@
+lst = [2, 4]
+print(lst * 2/2) # ERROR
+
+a = '13'
+b = '100'
+print(a > b) # False,
+
