@@ -1,0 +1,52 @@
+def display(**kwargs):
+    for i in kwargs:
+        print(i)
+
+display(name='hello', age=30) # Error,
+
+d = dict([('a', 1), ('b', 2)])
+print(d['a']) # None,
+
+x = lambda: pass
+print(x())
+
+lst = [1, 2, 3]
+print(lst is lst[:])
+
+
+print(int(1.99) == 2)
+
+print(sorted({1,2,1,3}))
+
+num = input('Число ->')
+print(type(num+1.0)) # Error
+
+print(1 == 1.0) # True,
+
+lst = [2, 2, 3, 3, 1]
+print(list(set(lst)))
+
+print({2,2,3,3,1} == {1,2,3}) # True
+
+lst = ['p', 'y']
+lst.insert(-1, 'py')
+print(lst) [p, py, y]
+
+lst = [p, y]
+lst.extend([py])
+print(lst) [p,y,p,y]
+
+lst = [py, py]
+lst.extend(py)
+lst.remove(py)
+print(lst)
+
+tp = ([0, 1], )
+tp[0].extend(py)
+print(tp) #
+
+
+
+
+
+
