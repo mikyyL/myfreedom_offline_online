@@ -32,3 +32,7 @@ print(detect.get_info_of_book())
 fant = Fantasy('Ведьмак', 'Сапковский')
 print(fant.get_info_of_book())
 
+
+
+def set_name(sefl, name)
+    sefl.__name = name
