@@ -1,14 +1,31 @@
-class Car:
+class Vehicle:
+    id = 1
+
+    @classmethod
+    def counter(cls):
+        cls.id = Vehicle.id
+        Vehicle.id += 1
+
+    def __new__(cls, *args, **kwargs):
+        cls.counter()
+        return super().__new__(cls)
+
+
+class CarMan(Vehicle):
+    pass
+
+
+class Car(Vehicle):
     def __init__(self):
         object_id_collector = self.id
 
 
-class CarCommander:
+class CarCommander(Vehicle):
     def __init__(self):
         object_id_collector = self.id
 
 
-class CarGunner:
+class CarGunner(Vehicle):
     def __init__(self):
         object_id_collector = self.id
 
